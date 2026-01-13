@@ -9,7 +9,7 @@ import bg from "../../assets/01.png"
 export default function HeroSection() {
   return (
     <section
-      className="w-full flex justify-center py-20 px-4 bg-no-repeat bg-top bg-cover relative mb-[120px]"
+      className="w-full flex justify-center py-20 px-4 bg-no-repeat bg-top bg-cover relative mb-[120px] mt-[74px]"
       style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFF5F1 100%)" }}
     >
 

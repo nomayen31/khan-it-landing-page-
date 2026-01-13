@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-full flex justify-center sticky top-0 z-[100]"
+      className="w-full flex justify-center fixed top-0 left-0 right-0 z-[100]"
       style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFF5F1 100%)" }}
     >
       {/* 1420px container */}
