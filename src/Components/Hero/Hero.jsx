@@ -10,27 +10,29 @@ export default function HeroSection() {
   return (
     <section
       className="w-full flex justify-center py-20 px-4 bg-no-repeat bg-top bg-cover relative mb-[120px]"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFF5F1 100%)" }}
     >
-      {/* Soft overlay */}
-      <div className="absolute inset-0 bg-white/80"></div>
 
       <div className="relative w-full max-w-[1400px] flex flex-col lg:flex-row justify-between gap-16">
 
         {/* LEFT SIDE */}
         <div className="w-full lg:w-[718px] flex flex-col justify-center">
-
           <div className="mb-10">
             <div className="relative inline-block">
               <h1 className="font-['DM Sans'] font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] text-black">
-                Digital Marketing Agency in Bangladesh
+                Digital{" "}
+                <span className="relative inline-block">
+                  Marketing
+                  <img
+                    src={topIcon}
+                    alt="Decoration"
+                    className="absolute -top-2 -right-4 sm:-top-2 sm:-right-6 w-[44px] sm:w-[56px] min-w-[44px] pointer-events-none select-none"
+                  />
+                </span>
+                <br />
+                Agency in <br />
+                Bangladesh
               </h1>
-
-              <img
-                src={topIcon}
-                alt="Decoration"
-                className="absolute -top-5 -right-5 sm:-top-6 sm:-right-6 w-[44px] sm:w-[56px]"
-              />
             </div>
           </div>
 

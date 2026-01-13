@@ -8,7 +8,10 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="w-full flex justify-center bg-white">
+    <nav
+      className="w-full flex justify-center sticky top-0 z-[100]"
+      style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFF5F1 100%)" }}
+    >
       {/* 1420px container */}
       <div className="w-full max-w-[1420px] h-[74px] flex items-center justify-between px-6">
 
@@ -87,7 +90,10 @@ export default function Navbar() {
 
       {/* Mobile + Tablet Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-[74px] left-0 w-full bg-white shadow-lg py-6 px-6 space-y-4 lg:hidden z-50">
+        <div
+          className="absolute top-[74px] left-0 w-full shadow-lg py-6 px-6 space-y-4 lg:hidden z-50"
+          style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFF5F1 100%)" }}
+        >
 
           <Link to="/" className="block">Home</Link>
           <Link to="/about" className="block">About</Link>
