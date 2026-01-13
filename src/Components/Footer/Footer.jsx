@@ -1,5 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin, Youtube, MapPin, Phone, Mail } from 'lucide-react';
+import logo from "../../assets/navlogo.png"
+
 
 const Footer = () => {
   return (
@@ -10,12 +12,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="text-blue-500 text-3xl font-bold">Khan IT</div>
+              <img src={logo} alt="Logo" className="h-12 w-auto" />
             </div>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               Khan IT is a full-stack digital marketing agency in Bangladesh offering complete online marketing, web design, and branding solutions.
             </p>
-            
+
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
